@@ -1,9 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+import xlsxwriter
 
 
 driver = webdriver.Chrome()
-driver.implicitly_wait(10)
+driver.implicitly_wait(20)
 driver.get("https://itdashboard.gov/")
 dive_button = driver.find_element(By.LINK_TEXT, value='DIVE IN')
 dive_button.click()
